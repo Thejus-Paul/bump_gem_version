@@ -6,11 +6,11 @@ require "bundler/setup"
 base_path = File.expand_path("../lib", __dir__)
 
 if File.exist?(base_path)
-  require_relative "../lib/bump_version"
+  require_relative "../lib/bump_gem_version"
 else
-  require "bump_version"
+  require "bump_gem_version"
 end
 
 args = ARGV
 
-BumpVersion::CLI.start(args, debug: false)
+BumpGemVersion::CLI.start(args, debug: false)

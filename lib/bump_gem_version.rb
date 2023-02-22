@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "bump_version/version"
+require_relative "bump_gem_version/version"
 require "thor"
 
-module BumpVersion
+module BumpGemVersion
   # All the CLI commands are defined here
   class CLI < Thor
     BUMPS         = %w[major minor patch pre].freeze

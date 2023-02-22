@@ -2,8 +2,8 @@
 
 require "test_helper"
 
-class TestBumpVersion < Minitest::Test
+class TestBumpGemVersion < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::BumpVersion::VERSION
+    refute_nil ::BumpGemVersion::VERSION
   end
 end

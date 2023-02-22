@@ -1,28 +1,28 @@
-# BumpVersion
+# BumpGemVersion
 
-BumpVersion is a gem that will simplify the way you build gems.
+BumpGemVersion is a gem that will simplify the way you build gems.
 
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
 
 ```sh
-bundle add bump_version
+bundle add bump_gem_version
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```sh
-gem install bump_version
+gem install bump_gem_version
 ```
 
 ## Usage
 
 ```sh
-bump_version current # 0.1.0
-bump_version patch # 0.1.0 -> 0.1.1
-bump_version minor # 0.1.0 -> 0.2.0
-bump_version major # 0.1.0 -> 1.0.0
+bump_gem_version current # 0.1.0
+bump_gem_version patch # 0.1.0 -> 0.1.1
+bump_gem_version minor # 0.1.0 -> 0.2.0
+bump_gem_version major # 0.1.0 -> 1.0.0
 ```
 
 ## Development
@@ -33,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at <https://github.com/thejus-paul/bump_version>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/thejus-paul/bump_version/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at <https://github.com/thejus-paul/bump_gem_version>. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/thejus-paul/bump_gem_version/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -41,4 +41,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the BumpVersion project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/thejus-paul/bump_version/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the BumpGemVersion project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/thejus-paul/bump_gem_version/blob/master/CODE_OF_CONDUCT.md).

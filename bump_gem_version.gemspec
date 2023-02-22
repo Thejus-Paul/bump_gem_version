@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/bump_version/version"
+require_relative "lib/bump_gem_version/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "bump_version"
-  spec.version = BumpVersion::VERSION
+  spec.name = "bump_gem_version"
+  spec.version = BumpGemVersion::VERSION
   spec.authors = ["Thejus Paul"]
   spec.email = ["thejuspaul@pm.me"]
 
-  spec.summary = "BumpVersion is a gem that will simplify the way you build gems."
-  spec.homepage = "https://rubygems.org/gems/bump_version"
+  spec.summary = "BumpGemVersion is a gem that will simplify the way you build gems."
+  spec.homepage = "https://rubygems.org/gems/bump_gem_version"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/thejus-paul/bump_version"
-  spec.metadata["changelog_uri"] = "https://github.com/thejus-paul/bump_version/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/thejus-paul/bump_gem_version"
+  spec.metadata["changelog_uri"] = "https://github.com/thejus-paul/bump_gem_version/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = Dir.chdir(__dir__) do

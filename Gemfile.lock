@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bump_version (0.1.0)
+    bump_gem_version (0.1.0)
       thor (~> 1.2)
 
 GEM
@@ -41,7 +41,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  bump_version!
+  bump_gem_version!
   minitest (~> 5.0)
   rake (~> 13.0)
   rubocop (~> 1.0)
