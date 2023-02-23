@@ -22,6 +22,12 @@ module BumpGemVersion
     desc "patch", "Bump the patch version of your gem"
     def patch = bump_gem_version("patch")
 
+    desc "label", "Bump the version of your gem from the given labels"
+    def labels(labels)
+      bump_type = labels.split(",").find { |label| BUMPS.include?(label) }
+      bump_type ? bump_gem_version(bump_type) : puts("Error: Unable to find a valid bump label.")
+    end
+
     private
 
     def bump_gem_version(bump_type)
@@ -52,7 +58,7 @@ module BumpGemVersion
         version_from_version_rb ||
         version_from_lib_rb
       )
-      puts "Unable to find the version." unless version
+      puts "Error: Unable to find the version." unless version
 
       [version, file]
     end

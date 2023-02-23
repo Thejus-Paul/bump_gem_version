@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bump_gem_version (0.1.1)
+    bump_gem_version (0.1.2)
       thor (~> 1.2)
 
 GEM
