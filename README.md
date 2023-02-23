@@ -20,9 +20,18 @@ gem install bump_gem_version
 
 ```sh
 bump_gem_version current # 0.1.0
+
 bump_gem_version patch # 0.1.0 -> 0.1.1
+
 bump_gem_version minor # 0.1.0 -> 0.2.0
+
 bump_gem_version major # 0.1.0 -> 1.0.0
+
+# To use with labels
+bump_gem_version labels bug,patch # 0.1.0 -> 0.1.1
+bump_gem_version labels feature,minor,patch # 0.1.0 -> 0.2.0
+bump_gem_version labels breaking,major # 0.1.0 -> 1.0.0
+bump_gem_version labels ${{ join(github.event.pull_request.labels.*.name, ',') }} # For GitHub PR labels
 ```
 
 ## Development

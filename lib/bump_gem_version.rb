@@ -33,10 +33,8 @@ module BumpGemVersion
     def bump_gem_version(bump_type)
       file = current_version[1]
       new_version = updated_version(bump_type)
-
       replace_version_in_file(file, new_version)
-      system("bundle install && git add Gemfile.lock #{file}")
-      system("git commit -m 'Bump version to #{new_version}' --no-verify")
+      replace_version_in_gemfile_lock_file("Gemfile.lock", new_version)
     end
 
     def updated_version(bump_type)
@@ -90,6 +88,18 @@ module BumpGemVersion
       content = File.read(file)
       content.gsub!(VERSION_REGEX, version)
       File.write(file, content)
+    end
+
+    def replace_version_in_gemfile_lock_file(file, version)
+      gem_name = current_gem_name
+      content = File.read(file)
+      content.gsub!(/#{gem_name} \((#{VERSION_REGEX})\)/, "#{gem_name} (#{version})")
+      File.write(file, content)
+    end
+
+    def current_gem_name
+      gemspec = Dir.glob("*.gemspec").first
+      File.read(gemspec)[/spec\.name\s+=\s+['"](.+)['"]/i, 1]
     end
   end
 end
