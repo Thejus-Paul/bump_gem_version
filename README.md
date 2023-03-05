@@ -32,6 +32,8 @@ bump_gem_version labels bug,patch # 0.1.0 -> 0.1.1
 bump_gem_version labels feature,minor,patch # 0.1.0 -> 0.2.0
 bump_gem_version labels breaking,major # 0.1.0 -> 1.0.0
 bump_gem_version labels ${{ join(github.event.pull_request.labels.*.name, ',') }} # For GitHub PR labels
+
+bump_gem_version exact 1.2.3 # 0.1.0 -> 1.2.3
 ```
 
 ## Development
