@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.4] - 2023-03-05
+
+- Added: `exact` method to bump version to the given version.
+
 ## [0.1.3] - 2023-02-23
 
 - Changed: Bump version logic on `Gemfile.lock` file.

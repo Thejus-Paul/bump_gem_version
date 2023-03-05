@@ -1,5 +1,9 @@
 # BumpGemVersion
 
+![Gem Version](https://badge.fury.io/rb/bump_gem_version.svg)
+![Gem](https://img.shields.io/gem/dt/bump_gem_version?color=#6DBE42)
+
+
 BumpGemVersion is a gem that will simplify the way you build gems.
 
 ## Installation
@@ -32,6 +36,8 @@ bump_gem_version labels bug,patch # 0.1.0 -> 0.1.1
 bump_gem_version labels feature,minor,patch # 0.1.0 -> 0.2.0
 bump_gem_version labels breaking,major # 0.1.0 -> 1.0.0
 bump_gem_version labels ${{ join(github.event.pull_request.labels.*.name, ',') }} # For GitHub PR labels
+
+bump_gem_version exact 1.2.3 # 0.1.0 -> 1.2.3
 ```
 
 ## Development

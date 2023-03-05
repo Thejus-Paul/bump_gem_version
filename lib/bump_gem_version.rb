@@ -28,7 +28,16 @@ module BumpGemVersion
       bump_type ? bump_gem_version(bump_type) : puts("Error: Unable to find a valid bump label.")
     end
 
+    desc "exact", "Bump the version of your gem to the given version"
+    def exact(version) = bump_exact_version(version)
+
     private
+
+    def bump_exact_version(version)
+      file = current_version[1]
+      replace_version_in_file(file, version)
+      replace_version_in_gemfile_lock_file("Gemfile.lock", version)
+    end
 
     def bump_gem_version(bump_type)
       file = current_version[1]
