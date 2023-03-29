@@ -108,7 +108,7 @@ module BumpGemVersion
 
     def current_gem_name
       gemspec = Dir.glob("*.gemspec").first
-      File.read(gemspec)[/spec\.name\s+=\s+['"](.+)['"]/i, 1]
+      File.read(gemspec)[/\.name\s+=\s+['"](.+)['"]/i, 1]
     end
   end
 end
