@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.5] - 2023-03-29
+
+- Fixed: REGEX used to retrieve the current gem name.
+
 ## [0.1.4] - 2023-03-05
 
 - Added: `exact` method to bump version to the given version.
