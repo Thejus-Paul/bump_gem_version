@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/thejus-paul/bump_gem_version"
-  spec.metadata["changelog_uri"] = "https://github.com/thejus-paul/bump_gem_version/CHANGELOG.md"
+  spec.metadata["changelog_uri"] = "https://github.com/Thejus-Paul/bump_gem_version/blob/main/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
   spec.files = Dir.chdir(__dir__) do
