@@ -16,3 +16,7 @@ Style/StringLiteralsInInterpolation:
 
 Layout/LineLength:
   Max: 120
+
+Metrics/ClassLength:
+  Exclude:
+    - "./test/test_bump_gem_version.rb"
