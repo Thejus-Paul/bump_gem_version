@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.6] - 2023-04-01
+
+- Added: Option to provide `default` bump label for the `labels` command.
+
 ## [0.1.5] - 2023-03-29
 
 - Fixed: REGEX used to retrieve the current gem name.
