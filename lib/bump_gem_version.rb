@@ -24,12 +24,13 @@ module BumpGemVersion
 
     desc "labels", "Bump the version of your gem from the given labels"
     option(:default, desc: "Uses the given default label in case the label was not provided, \
-or the given labels don't contain bump-type label.", banner: "LABEL", type: :string, aliases: "-d")
+or the given labels do not contain bump-type label.", banner: "LABEL", type: :string, aliases: "-d")
     def labels(labels = options[:default])
-      bump_type = labels.split(",").find { |label| BUMPS.include?(label) }
+      bump_type = labels&.split(",")&.find { |label| BUMPS.include?(label) }
 
       if bump_type.nil? && !BUMPS.include?(options[:default])
-        return puts("Error: Unable to find a valid bump label or default label.")
+        say_error("Unable to find a valid bump label or default label.", :red)
+        exit 1
       end
 
       return bump_gem_version(bump_type) unless bump_type.nil?
@@ -74,7 +75,10 @@ or the given labels don't contain bump-type label.", banner: "LABEL", type: :str
         version_from_version_rb ||
         version_from_lib_rb
       )
-      puts "Error: Unable to find the version." unless version
+      unless version
+        say_error("Unable to find the version.", :red)
+        exit 1
+      end
 
       [version, file]
     end
