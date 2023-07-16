@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.7] - 2023-07-16
+
+- Changed: Bumped the dependency gems to their latest version.
+
 ## [0.1.6] - 2023-04-01
 
 - Added: Option to provide `default` bump label for the `labels` command.
