@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.8] - 2023-12-30
+
+- Changed: Bumped the dependency gems to their latest version.
+
 ## [0.1.7] - 2023-07-16
 
 - Changed: Bumped the dependency gems to their latest version.
