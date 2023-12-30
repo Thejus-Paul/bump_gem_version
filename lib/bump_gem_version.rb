@@ -8,7 +8,7 @@ module BumpGemVersion
   class CLI < Thor
     BUMPS         = %w[major minor patch pre].freeze
     PRERELEASE    = ["alpha", "beta", "rc", nil].freeze
-    VERSION_REGEX = /(\d+\.\d+\.\d+(?:-(?:#{PRERELEASE.compact.join('|')}))?)/
+    VERSION_REGEX = /(\d+\.\d+\.\d+(?:-(?:#{PRERELEASE.compact.join("|")}))?)/
 
     desc "current", "Get the current version of your gem"
     def current = puts(current_version[0])
@@ -71,10 +71,10 @@ or the given labels do not contain bump-type label.", banner: "LABEL", type: :st
     end
 
     def current_version
-      version, file = (
+      version, file =
         version_from_version_rb ||
         version_from_lib_rb
-      )
+
       unless version
         say_error("Unable to find the version.", :red)
         exit 1
