@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "BumpGemVersion is a gem that will simplify the way you build gems."
   spec.homepage = "https://rubygems.org/gems/bump_gem_version"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1"
+  spec.required_ruby_version = ">= 3.2"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/thejus-paul/bump_gem_version"
@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "thor", "~> 1.3"
+  spec.add_dependency "thor", "~> 1.3"
 end
