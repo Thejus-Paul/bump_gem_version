@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [1.0.1] - 2024-09-09
+
+- Changed: Bumped the dependency gems to their latest version.
+
 ## [1.0.0] - 2024-07-29
 
 - Changed: Bumped the dependency gems to their latest version.
