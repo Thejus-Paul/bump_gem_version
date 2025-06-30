@@ -10,9 +10,9 @@ group :development, :test do
 
   gem "rake"
 
-  gem "rubocop"
+  gem "rubocop", ">= 1.72.0"
 
-  gem "rubocop-minitest"
+  gem "rubocop-minitest", ">= 0.37.0"
 
-  gem "rubocop-rake"
+  gem "rubocop-rake", ">= 0.7.0"
 end
