@@ -4,7 +4,7 @@
 ![Gem](https://img.shields.io/gem/dt/bump_gem_version?color=#6DBE42)
 
 
-This gem will simplify the way you bump gem versions.
+This gem will simplify the way you bump gem versions. test
 
 ## Installation
 
